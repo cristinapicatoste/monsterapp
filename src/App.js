@@ -17,11 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <input
-        type="search"
-        placeholder="Search monster"
-        onChange={e => setSearchField(e.target.value)}
-      /> */}
+      <h1>Monster Rolodex</h1>
       <SearchBox
         type={"search"}
         placeholder={"Search monster"}
