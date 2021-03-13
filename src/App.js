@@ -24,7 +24,7 @@ function App() {
         onChange={setSearchField}
       />
       {!searchField && monsters && <CardList monsters={monsters} />}
-      {filteredMonsters && <CardList monsters={filteredMonsters} />}
+      {searchField && <CardList monsters={filteredMonsters} />}
     </div>
   );
 }
