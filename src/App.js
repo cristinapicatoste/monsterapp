@@ -23,8 +23,11 @@ function App() {
         placeholder={"Search monster"}
         onChange={setSearchField}
       />
-      {!searchField && monsters && <CardList monsters={monsters} />}
-      {searchField && <CardList monsters={filteredMonsters} />}
+      {
+        !searchField && monsters
+          ? <CardList monsters={monsters} />
+          : <CardList monsters={filteredMonsters} />
+      }
     </div>
   );
 }
